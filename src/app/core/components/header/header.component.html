@@ -1,0 +1,14 @@
+<div class="header">
+    <span>
+        <img src="../../../assets/images/ATAName.png" alt="ATA" class="logo-image">
+    </span>
+    <span class="switch-container">
+        <span class="switch-tab " [ngClass]="currentTab=='flow' ? 'selected-tab' : '' " (click)="switchTab('flow')">FLOW CAPTURE</span>
+        <span class="switch-tab " [ngClass]="currentTab=='object' ? 'selected-tab' : '' " (click)="switchTab('object')">OBJECT CAPTURE</span>
+    </span>
+    <hr>
+    <span>
+        <app-toolbar-footer></app-toolbar-footer>
+    </span>
+    <hr>
+</div>

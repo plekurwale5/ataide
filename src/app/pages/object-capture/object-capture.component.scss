@@ -1,0 +1,65 @@
+.add-page{
+    color: blue;
+    cursor: pointer;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+.web-page{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.background-none{
+    background-color: transparent;
+}
+
+$command-color:#a87061;
+$target-color:#9a9797;
+$value-color:#969ebb;
+ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // height: 100vh; removed because of the bug in height was causing stretch 
+    li {
+      // height: 35px;
+      display: flex;
+      width: 100%;
+      // margin-top: 15px;
+      .block {
+        // flex-grow: 1;
+        color: white;
+        width: 200px;
+        // @include box_shadow(1);
+        padding: 4px;
+        font-size: 14px;
+        font-weight: 400;
+  
+        &:first-child {
+          border-radius: 10px 0px 0px 10px;
+        }
+  
+        &:last-child {
+          border-radius: 0px 10px 10px 0px;
+        }
+  
+        &.command {
+          background-color: $command-color;
+        }
+  
+        &.target {
+          background-color: $target-color;
+          color: white;
+        }
+  
+        &.value {
+          background-color: $value-color;
+        }
+        span {
+          margin: 20px 20px 20px 20px;
+        }
+      }
+    }
+  }

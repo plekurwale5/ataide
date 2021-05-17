@@ -1,0 +1,37 @@
+<div>
+    <mat-form-field>
+        <mat-label>Select Page</mat-label>
+        <mat-select #pn (selectionChange)="changePage(pn.value)">
+            <mat-option *ngFor="let page of webpages" [value]="page._id">
+                {{page.name}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <div class="element-list-container row">
+        <div class="col-sm-12">
+            <div class="object-List-Box row">
+                <h3 *ngIf="currentWebPage == undefined || currentWebPage == ''" class="no-step-selected"> Create /
+                    Select
+                    Webpage To View Web Objects </h3>
+                <div [hidden]="currentWebPage == undefined || currentWebPage == ''|| element.hidden" class="col-sm-2"
+                    *ngFor="let element of webobjectsFiltered">
+                    <div class="element row" id="FullElement">
+                        <span class="object-icon col-sm-3 no-border" (click)="editElement(element)">
+                            <span class="material-icons ">{{getIconFromWebObjectType(element.webobjectType)}}</span>
+                            <!-- <i class="fas {{wot==undefined?'fa-globe':wot.icon}}"></i> -->
+                        </span>
+                        <span class="element-obj-text col-sm-7" (click)="editElement(element)"
+                            matTooltip="{{element.name}}">
+                            {{element.name}}
+                        </span>
+                        <span class="floating-trash col-sm-2">
+                            <mat-icon (click)="deleteWebObject(element._id)" style="font-size: 1.4em;">delete</mat-icon>
+                            <mat-icon (click)="copyObject(element)" style="font-size: 1.4em;">content_copy</mat-icon>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

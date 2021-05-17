@@ -1,0 +1,24 @@
+.header{
+    // position: fixed;
+    top: 0;
+    width: 100%
+}
+.logo-image {
+    width: 4em;
+    margin: 5px ;
+}
+
+.switch-container{
+    float: right;
+    // background-color: #6c6e7a;
+    margin: 10px;
+}
+
+.switch-tab{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.selected-tab{
+    background-color: #373738;
+}

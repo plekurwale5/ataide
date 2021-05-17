@@ -1,0 +1,190 @@
+html {
+    body {
+        color: var(--color);
+        background-color: var(--bgColor);
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: 'OpenSans', -apple-system, BlinkMacSystemFont,
+            'Segoe UI', 'Roboto', 'Oxygen',
+            'Ubuntu', 'Cantarell', 'Fira Sans',
+            'Droid Sans', 'Helvetica Neue',
+            sans-serif;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex-spacer {
+    flex: 1 1 auto;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    margin: 100px auto;
+    background-color: #333;
+    border-radius: 100%;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@keyframes sk-scaleout {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+// /* You can add global styles to this file, and also import other style files */
+// @import "./node_modules/uikit/src/scss/variables-theme.scss";
+// @import "./node_modules/uikit/src/scss/mixins-theme.scss";
+// @import "~ng-snotify/styles/material";
+// // 3. Your custom mixin overwrites.
+// @mixin hook-card() {
+//   color: #000;
+// }
+
+// // 4. Import UIkit.
+// @import "./node_modules/uikit/src/scss/uikit-theme.scss";
+// // @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+// @import "Styles-variables";
+
+.debug-test {
+}
+.mat-form-field-underline {
+  height: 0px !important;
+}
+.mat-form-field-infix {
+  border: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #22252a;
+}
+.mat-tab-label {
+    height: 5vh !important;
+  }
+  
+  .uk-modal-body, .uk-modal-footer{
+    background-color: #2d3035;
+    color: #fff;
+    border-top: 1.5px dashed #1F2228;
+  }
+  input.uk-input {
+    background: #1F2228;
+    border: 1px;
+    border: 1px solid #1F2228;
+    margin-top: 6px;
+  }
+  button.uk-button.uk-button-default.uk-modal-close {
+    color: #fff;
+}
+input.uk-input:focus {
+  background: #1F2228;
+}
+
+// Library Page
+.ngx-file-drop__drop-zone {
+  height: 100px !important;
+  margin: auto !important;
+  border: none !important;
+  border-radius: 5px !important;
+  padding: 13px;
+}
+.ngx-file-drop__content {
+  border: 1px solid #f5deb321 !important;
+  border-radius: 5px;
+  padding: 15px 0px;
+}
+
+.execution-container{
+   .mat-form-field-infix{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid wheat;
+    background: #2d3035;
+    color: #6E6F73;
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+    color: #FFF !important;
+  }
+  mat-label {
+    color: wheat;
+    padding-left: 5px;
+  }
+  span.mat-select-value-text {
+    color: wheat;
+    font-size: 0.8em;
+  }
+  .btns {
+    text-align: right;
+    button.mat-raised-button.mat-button-base {
+      margin: 0px 15px;
+      background: #1f2228;
+      border: 1px solid wheat;
+      color: wheat;
+  }
+}
+}
+
+.pointer {cursor: pointer;}
+
+
+@-webkit-keyframes rotation {
+  from {
+          -webkit-transform: rotate(0deg);
+  }
+  to {
+          -webkit-transform: rotate(370deg);
+  }
+
+}
+
+.text{
+  color:wheat;
+  text-align: center;
+}
+
+center-placeholder::placeholder {
+  text-align: center;
+}
+
+body{
+  height: 100vh !important;
+  overflow: hidden;  
+  }
+
+  .ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .float-right{
+    float: right;
+  }
+  /*  
+.mat-form-field-label-wrapper {
+  top: -1.35em!important;
+  padding-top: .84375em;
+} */
+
+
+div .mat-menu-panel {
+  min-width: unset !important;
+}
+button .mat-menu-item {
+    padding: 0px 0px 0px 12px;
+}

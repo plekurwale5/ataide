@@ -1,0 +1,69 @@
+.footer{
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20vh;
+}
+
+.container{
+    height:100%;
+}
+.row3{
+    width: 33%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+.row2{
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+.col2{
+    width: 100%;
+    height: 50%;
+ 
+}
+// .tool-btn{
+//     margin: auto;
+//     background-color:#3B3B3D ;
+//     color:wheat;
+//     border-radius: 3px;
+//     border-style: none;
+//     cursor: pointer;
+//     width: auto;
+
+// }
+.tool-btn{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    width: 75%;
+    font-weight: bold;
+    color: wheat;
+    border-radius: 15px;
+    text-decoration: none;
+    background-color: #3B3B3D;
+    border: 0;
+    margin: auto;
+    padding: 10px 5px 10px 5px;
+    cursor: pointer;
+}
+.tool-btn:hover {
+	background-color: #128196;
+    // color: #3B3B3D;
+}
+.center{
+    text-align: center;
+}
+
+.play-btn{
+    background-color: green;
+}
+.stop-btn{
+    background-color: red;
+
+}

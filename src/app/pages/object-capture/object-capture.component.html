@@ -1,0 +1,32 @@
+<div>
+    <div class="web-page">
+        <input class="background-none">
+    </div>
+    <div class="web-object-container">
+        <ul class="list">
+            <li class="box">
+                <ng-container>
+                    <ul class="list1">
+                        <li class="box1">
+                            <i class="fas fa-delete"></i>
+
+                            <span class="block command ellipsis ">
+                                <span>Command</span>
+                            </span>
+                            <div class="block target list" style="z-index: 99;">
+                                <div class="ellipsis">Target </div>
+                            </div>
+                            <!-- [ngClass]="{ 'myGlower':getShowInputValue(i) }" (dblclick)="showInput($event,i)" -->
+                            <div class="block value ellipsis">
+                                <input class="background-none">
+                            </div>
+                        </li>
+                        <li class="drag-placeholder"> </li>
+                    </ul>
+                </ng-container>
+            </li>
+        </ul>
+    </div>
+    <div class="add-page"><a>Add Page</a>+</div>
+</div>
+<!-- <app-toolbar-footer></app-toolbar-footer> -->

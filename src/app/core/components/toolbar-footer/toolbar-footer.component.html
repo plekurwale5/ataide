@@ -1,0 +1,33 @@
+<div class="">
+    <div class="container">
+        <div class="row2 center">
+            <button class="tool-btn play-btn" *ngIf="currentState=='reset'" (click)="changeState('playing')">
+                <i class="fas fa-play"></i>
+Play</button>
+            <button class="tool-btn stop-btn" *ngIf="currentState=='playing'" (click)="changeState('reset')">
+                <i class="fas fa-stop"></i>
+                
+                Stop</button>
+        </div>
+        <div class="row2 center">
+            <button class="tool-btn">
+                <i class="fas fa-pause"></i>
+                Pause</button>
+        </div>
+        <div class="row2 center">
+            <button class="tool-btn">
+                <i class="fas fa-eye"></i>
+                Preview</button>
+        </div>
+        <div class="row2 center">
+                <button class="tool-btn">
+                <i class="fas fa-check-square"></i>
+                Validate</button>
+        </div>
+        <div class="row2 center">
+            <button class="tool-btn">
+                <i class="fas fa-save"></i>
+                Save</button>
+        </div>
+    </div>
+</div>
