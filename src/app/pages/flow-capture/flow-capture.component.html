@@ -7,14 +7,14 @@
             </mat-option>
         </mat-select>
     </mat-form-field>
-
     <div class="element-list-container row">
         <div class="col-sm-12">
             <div class="object-List-Box row">
                 <h3 *ngIf="currentWebPage == undefined || currentWebPage == ''" class="no-step-selected"> Create /
                     Select
                     Webpage To View Web Objects </h3>
-                <div [hidden]="currentWebPage == undefined || currentWebPage == ''|| element.hidden" class="col-sm-2"
+                <!-- <div [hidden]="currentWebPage == undefined || currentWebPage == ''|| element.hidden" class="col-sm-2"     -->
+                <div  [hidden]="currentWebPage == undefined || currentWebPage == ''|| element.hidden" class="col-sm-2"  class="col-sm-2"
                     *ngFor="let element of webobjectsFiltered">
                     <div class="element row" id="FullElement">
                         <span class="object-icon col-sm-3 no-border" (click)="editElement(element)">
@@ -26,12 +26,13 @@
                             {{element.name}}
                         </span>
                         <span class="floating-trash col-sm-2">
-                            <mat-icon (click)="deleteWebObject(element._id)" style="font-size: 1.4em;">delete</mat-icon>
-                            <mat-icon (click)="copyObject(element)" style="font-size: 1.4em;">content_copy</mat-icon>
+                            <mat-icon (click)="deleteWebObject(element._id)" style="font-size: 1.3em;">delete</mat-icon>
+                            <mat-icon (click)="copyObject(element)" style="font-size: 1.3em;">content_copy</mat-icon>
                         </span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 </div>

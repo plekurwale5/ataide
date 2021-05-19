@@ -188,3 +188,16 @@ div .mat-menu-panel {
 button .mat-menu-item {
     padding: 0px 0px 0px 12px;
 }
+
+.mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label{
+  transform: translateY(-1.50em) scale(0.75) perspective(100px) translateZ(0.001px);
+}
+
+// div#cdk-overlay-0 {
+//   min-width: 200px !important;
+//   pointer-events: auto  !important;
+//   font-size: 14px !important;
+//   top: 75.125px !important;
+//   left: 26px !important;
+//   transform: translateX(-16px) translateY(-13px) !important;
+// }
