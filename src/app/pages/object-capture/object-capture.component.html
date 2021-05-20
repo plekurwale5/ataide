@@ -4,21 +4,21 @@
     </div>
     <div class="web-object-container">
         <ul class="list">
-            <li class="box">
+            <li class="box"  *ngFor="let ctv of ctvList">
                 <ng-container>
                     <ul class="list1">
                         <li class="box1">
                             <i class="fas fa-delete"></i>
 
                             <span class="block command ellipsis ">
-                                <span>Command</span>
+                                <span>{{ctv.command.name}}</span>
                             </span>
                             <div class="block target list" style="z-index: 99;">
-                                <div class="ellipsis">Target </div>
+                                <div class="ellipsis">{{ctv.target?.name}} </div>
                             </div>
                             <!-- [ngClass]="{ 'myGlower':getShowInputValue(i) }" (dblclick)="showInput($event,i)" -->
                             <div class="block value ellipsis">
-                                <input class="background-none">
+                                {{ctv.value2}}
                             </div>
                         </li>
                         <li class="drag-placeholder"> </li>

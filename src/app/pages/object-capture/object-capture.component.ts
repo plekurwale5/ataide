@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./object-capture.component.scss']
 })
 export class ObjectCaptureComponent implements OnInit {
-
+  ctvList=[];
   constructor() { }
 
   ngOnInit(): void {
