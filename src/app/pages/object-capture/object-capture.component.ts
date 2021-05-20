@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./object-capture.component.scss']
 })
 export class ObjectCaptureComponent implements OnInit {
-  ctvList=[];
+  ctvList=[
+    {"command":{name:"command"},"target":{name:"target"},"value":""},
+    {"command":{name:"command"},"target":{name:"target"},"value":""},
+    {"command":{name:"command"},"target":{name:"target"},"value":""}
+  ];
   constructor() { }
 
   ngOnInit(): void {
