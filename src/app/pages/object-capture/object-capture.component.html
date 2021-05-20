@@ -1,8 +1,8 @@
 <div>
     <div class="web-page">
-        <input class="background-none">
+        <!-- <input class="background-none"> -->
     </div>
-    <div class="web-object-container">
+    <div class="web-object-container"  [hidden]="!stopped">
         <ul class="list">
             <li class="box"  *ngFor="let ctv of ctvList">
                 <ng-container>
@@ -13,11 +13,14 @@
                             <span class="block command ellipsis ">
                                 <span>{{ctv.command.name}}</span>
                             </span>
-                            <div class="block target list" style="z-index: 99;">
+                            <div class="block target list" style="z-index: 99;" *ngIf="ctv.command.accepts[0]=='target'">
+                                <div class="ellipsis">{{ctv.target?.name}} </div>
+                            </div>
+                            <div class="block target list" style="z-index: 99;" *ngIf="ctv.command.accepts[1]=='target'">
                                 <div class="ellipsis">{{ctv.target?.name}} </div>
                             </div>
                             <!-- [ngClass]="{ 'myGlower':getShowInputValue(i) }" (dblclick)="showInput($event,i)" -->
-                            <div class="block value ellipsis">
+                            <div class="block value ellipsis" *ngIf="ctv.command.accepts[0]=='value'||(ctv.command.accepts[0]=='target'&&ctv.command.accepts[1]=='value')">
                                 {{ctv.value}}
                             </div>
                         </li>

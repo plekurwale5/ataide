@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+  stopped=false;
+  stopPress(event){
+    this.stopped=true;
+  }
+
   currentSwitch="object";
   constructor() { }
 

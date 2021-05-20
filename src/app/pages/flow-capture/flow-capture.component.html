@@ -14,7 +14,7 @@
                 <h3 *ngIf="currentWebPage == undefined || currentWebPage == ''" class="no-step-selected"> Create /
                     Select
                     Webpage To View Web Objects </h3>
-                <div [hidden]="currentWebPage == undefined || currentWebPage == ''|| element.hidden" class="col-sm-2"
+                <div class="col-sm-2"
                     *ngFor="let element of webobjectsFiltered">
                     <div class="element row" id="FullElement">
                         <span class="object-icon col-sm-3 no-border" (click)="editElement(element)">

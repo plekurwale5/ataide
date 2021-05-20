@@ -8,7 +8,12 @@ import { EventEmitter } from '@angular/core';
 export class HeaderComponent implements OnInit {
   currentTab:String="object";
   @Output() headerChanged = new EventEmitter();
+  @Output() stopped = new EventEmitter();
+  stopPress(event){
+    this.stopped.emit(event);
+    console.log("emit in header")
 
+  }
   constructor() { }
 
   ngOnInit(): void {
