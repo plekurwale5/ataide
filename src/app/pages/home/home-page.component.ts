@@ -25,7 +25,7 @@ export class HomePageComponent extends BaseAbstract implements OnInit {
         this.activatedRoute.queryParams.subscribe(values => {
             console.log(values);//Which will print the properties you have passed
             switch (values.open) {
-                case "2":
+                case "3":
                     this.route.navigate(["/mainComponent",{}]);              
                     break;
             

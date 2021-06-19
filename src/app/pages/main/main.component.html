@@ -1,4 +1,4 @@
-<app-header (headerChanged)="changed($event)" (stopped)="stopPress($event)"></app-header>
+<app-header (headerChanged)="changed($event)" (stopped)="stopPress($event)" (record)="recordFlow($event)"></app-header>
 <app-object-capture *ngIf="currentSwitch=='object';else flow_capture" [stopped]="stopped"></app-object-capture>
 <ng-template #flow_capture>
     <app-flow-capture></app-flow-capture>

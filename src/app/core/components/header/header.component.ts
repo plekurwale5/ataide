@@ -9,8 +9,14 @@ export class HeaderComponent implements OnInit {
   currentTab:String="object";
   @Output() headerChanged = new EventEmitter();
   @Output() stopped = new EventEmitter();
+  @Output() record = new EventEmitter();
   stopPress(event){
     this.stopped.emit(event);
+    console.log("emit in header")
+
+  }
+  recordPress(event){
+    this.record.emit(event);
     console.log("emit in header")
 
   }
